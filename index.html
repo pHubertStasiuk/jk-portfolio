@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link" href="#about">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">SKILLS</a>
@@ -110,8 +110,12 @@
                             class="floating-element floating-element-4 floating-icon" />
 
 
-                        <div class="image-container">
-                            <div class="profile-image"></div>
+
+                        <div class="image-wrapper">
+                            <div class="image-container"></div>
+                            <div class="profile-image">
+                                <img src="/assets/img/image.png" alt="profile-image" class="profile-pic" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,73 +125,176 @@
 
 
 
-    <!-- About Me Section -->
+    <!-- Enhanced About Me Section -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="section-header fade-in">
-                        <h2 class="section-title">About Me</h2>
+                <div class="col-lg-10 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">My Data Journey</h2>
                         <div class="section-divider"></div>
+                        <p
+                            style="font-size: 1.1rem; color: var(--text-gray); max-width: 600px; margin: 0 auto; margin-bottom: 2rem;">
+                            Where marketing intuition meets analytical precision - transforming business questions into
+                            data-driven solutions.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                    <div class="about-image fade-in">
-                        <div class="about-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+            <!-- Journey Timeline -->
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="timeline-title">Marketing Foundation</div>
+                    <div class="timeline-subtitle">Understanding Business Impact</div>
+                    <div class="timeline-description">
+                        Built a solid foundation in marketing, learning to identify customer pain points, measure
+                        campaign effectiveness, and translate business objectives into actionable strategies. This
+                        experience taught me the critical skill of asking the right questions - the foundation of great
+                        data analysis.
                     </div>
                 </div>
 
-                <div class="col-lg-8">
-                    <div class="about-content fade-in">
-                        <h3 class="about-subtitle">Aspiring Data Professional</h3>
-
-                        <p class="about-text">
-                            I'm a dedicated data enthusiast with a strong foundation in SQL, Power BI, and Azure
-                            technologies. My journey in data analytics combines technical expertise with a passion for
-                            storytelling through data.
-                        </p>
-
-                        <p class="about-text">
-                            I excel at transforming complex datasets into clear, actionable insights that drive business
-                            value. My experience spans database management and ETL processes to creating compelling
-                            visualizations and interactive dashboards.
-                        </p>
-
-                        <p class="about-text">
-                            I'm actively seeking opportunities as a Junior Data Analyst or Junior Data Engineer where I
-                            can contribute my skills while continuing to grow in the dynamic field of data science.
-                        </p>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <div class="timeline-title">Technical Transformation</div>
+                    <div class="timeline-subtitle">Building Analytical Arsenal</div>
+                    <div class="timeline-description">
+                        Recognized the power of data in marketing and dove deep into SQL, Power BI, Azure, and Python.
+                        Earned Microsoft certifications (PL-300 Power BI, AZ-900 Azure) while applying these skills to
+                        real marketing challenges, creating a unique blend of business acumen and technical expertise.
+                    </div>
+                </div>
 
-                    <div class="stats-container fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-title">Data-Driven Future</div>
+                    <div class="timeline-subtitle">Ready for Analytics Excellence</div>
+                    <div class="timeline-description">
+                        Now combining marketing insight with data engineering skills to solve complex business problems.
+                        I don't just build dashboards - I craft data stories that drive decisions, optimize processes,
+                        and unlock hidden opportunities in your data.
+                    </div>
+                </div>
+            </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="stat-item">
-                                    <span class="stat-number" data-target="650">0</span>
-                                    <span class="stat-label">Happy Clients</span>
-                                </div>
+            <!-- Certifications Showcase -->
+            <div class="certifications-showcase">
+                <h3 style="text-align: center; font-weight: 700; margin-bottom: 2rem; color: var(--text-dark);">
+                    Microsoft Certified Professional
+                </h3>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="cert-badge">
+                            <div class="cert-icon">
+                                <i class="fas fa-chart-bar"></i>
                             </div>
-                            <div class="col-md-4">
-                                <div class="stat-item">
-                                    <span class="stat-number" data-target="99">0</span>
-                                    <span class="stat-label">Success Rate</span>
-                                </div>
+                            <div class="cert-title">Power BI Data Analyst</div>
+                            <div class="cert-subtitle">PL-300 Certification</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="cert-badge">
+                            <div class="cert-icon">
+                                <i class="fas fa-cloud"></i>
                             </div>
-                            <div class="col-md-4">
-                                <div class="stat-item">
-                                    <span class="stat-number" data-target="240">0</span>
-                                    <span class="stat-label">Completed Projects</span>
-                                </div>
-                            </div>
+                            <div class="cert-title">Azure Fundamentals</div>
+                            <div class="cert-subtitle">AZ-900 Certification</div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Marketing Superpower Section -->
+            <div class="superpower-section">
+                <h3 class="superpower-title">Why Marketing Background is My Superpower</h3>
+                <div class="superpower-grid">
+                    <div class="superpower-item">
+
+                        <h4>Business Context</h4>
+                        <p>I understand what metrics actually matter to stakeholders and can translate technical
+                            findings into business impact.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Storytelling with Data</h4>
+                        <p>Marketing taught me to craft compelling narratives - now I tell stories with data that
+                            inspire action.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Customer-Centric Analysis</h4>
+                        <p>I naturally approach data analysis from the customer's perspective, uncovering insights that
+                            drive growth.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Results-Driven Mindset</h4>
+                        <p>Marketing experience means I focus on analyses that directly impact ROI and business
+                            outcomes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Metrics -->
+            <div class="stats-container fade-in">
+
+                <h3 style="text-align: center; font-weight: 700; margin-bottom: 1rem; color: var(--text-dark);">
+                    Impact & Expertise
+                </h3>
+                <div class="section-divider"></div>
+                <p style="text-align: center; color: var(--text-gray); margin-bottom: 2rem;">
+                    Measurable results that showcase the power of marketing-driven data analysis
+                </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <div class="stat-item-container stat-item">
+                            <span class="stat-number" data-target="650">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="99">0</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="240">0</span>
+                            <span class="stat-label">Completed Projects</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">Kisses granted</span>
+                        </div>
+                    </div>
+                         <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1200">0</span>
+                            <span class="stat-label">Hours learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inspirational Quote -->
+            <div class="quote-section">
+                <div class="quote-text">
+                    "The best data analysts don't just crunch numbers - they understand the human story behind every
+                    data point. My marketing background gives me that human lens."
+                </div>
+                <div class="quote-author">- My Data Philosophy</div>
             </div>
         </div>
     </section>
@@ -253,7 +360,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Featured Projects Section -->
     <section class="projects-section" id="projects">
