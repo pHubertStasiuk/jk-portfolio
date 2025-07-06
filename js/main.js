@@ -96,3 +96,59 @@ window.addEventListener('load', function () {
         }, index * 100);
     });
 });
+
+  const powerBiUrls = {
+    "sales-performance": "https://app.powerbi.com/view?r=eyJrIjoiNTZlZmVmMmMtMTM1My00OWNhLWIzNDItNjQ3YjBhZTc5YzMxIiwidCI6IjI5OWJlMzdlLWEyZTItNDY3OC1iYzc5LWMxOTJmNDVjNGQxMyJ9",
+    "etl-pipeline": "https://your-etl-dashboard-url",
+    "customer-segmentation": "https://your-customer-segmentation-url"
+  };
+
+  document.querySelectorAll(".project-cta-primary").forEach(button => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const projectId = this.getAttribute("data-project-id");
+      const iframe = document.getElementById("powerbiIframe");
+      iframe.src = powerBiUrls[projectId];
+
+      const modal = document.getElementById("powerbiModal");
+      modal.style.display = "block";
+
+      // Request fullscreen for the modal
+      if (modal.requestFullscreen) {
+        modal.requestFullscreen();
+      } else if (modal.webkitRequestFullscreen) { // Safari
+        modal.webkitRequestFullscreen();
+      } else if (modal.msRequestFullscreen) { // IE11
+        modal.msRequestFullscreen();
+      }
+    });
+  });
+
+  document.getElementById("closeModalBtn").addEventListener("click", function () {
+    const modal = document.getElementById("powerbiModal");
+    modal.style.display = "none";
+    document.getElementById("powerbiIframe").src = "";
+
+    // Exit fullscreen if open
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  });
+
+  window.addEventListener("click", function (e) {
+    const modal = document.getElementById("powerbiModal");
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.getElementById("powerbiIframe").src = "";
+
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  });

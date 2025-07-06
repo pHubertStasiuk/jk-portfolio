@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Joanna Kadlewicz - Data Analytics Portfolio - Power BI, SQL, Python, Azure, Cloud, ETL, Data Visualization and Data Analyst.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/icons/power_bi_graphs.png" type="image/x-icon" />
     <title>Joanna Kadlewicz - Data Analytics Portfolio</title>
@@ -11,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z591HJMTC2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z591HJMTC2');
+    </script>
 
 <body>
     <!-- Navigation -->
@@ -205,8 +215,8 @@
                             <div class="cert-icon">
                                 <i class="fas fa-cloud"></i>
                             </div>
-                            <div class="cert-title">Azure Fundamentals</div>
-                            <div class="cert-subtitle">AZ-900 Certification</div>
+                            <div class="cert-title">Azure Data Fundamentals</div>
+                            <div class="cert-subtitle">DP-900 Certification</div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +289,7 @@
                             <span class="stat-label">Kisses granted</span>
                         </div>
                     </div>
-                         <div class="col-md-2">
+                    <div class="col-md-2">
                         <div class="stat-item">
                             <span class="stat-number" data-target="1200">0</span>
                             <span class="stat-label">Hours learning</span>
@@ -388,10 +398,10 @@
                             </p>
                         </div>
                         <div class="project-cta">
-                            <a href="#" class="project-cta-primary">
+                            <a href="javascript:void(0);" class="project-cta-primary" data-project-id="sales-performance">
                                 <i class="fa-solid fa-tv"></i> Live Preview
                             </a>
-                            <a href="#" class="project-cta-secondary">
+                            <a href="javascript:void(0);" class="project-cta-secondary">
                                 <i class="fa-solid fa-list-check"></i> Case Study
                             </a>
                         </div>
@@ -413,10 +423,10 @@
                             </p>
                         </div>
                         <div class="project-cta">
-                            <a href="#" class="project-cta-primary">
+                            <a href="javascript:void(0);" class="project-cta-primary" data-project-id="etl-pipeline">
                                 <i class="fa-solid fa-tv"></i> Live Preview
                             </a>
-                            <a href="#" class="project-cta-secondary">
+                            <a href="javascript:void(0);" class="project-cta-secondary">
                                 <i class="fa-solid fa-list-check"></i> Case Study
                             </a>
                         </div>
@@ -439,10 +449,10 @@
                             </p>
                         </div>
                         <div class="project-cta">
-                            <a href="#" class="project-cta-primary">
+                            <a href="javascript:void(0);" class="project-cta-primary" data-project-id="customer-segmentation">
                                 <i class="fa-solid fa-tv"></i> Live Preview
                             </a>
-                            <a href="#" class="project-cta-secondary">
+                            <a href="javascript:void(0);" class="project-cta-secondary">
                                 <i class="fa-solid fa-list-check"></i> Case Study
                             </a>
                         </div>
@@ -452,49 +462,15 @@
         </div>
     </section>
 
-    <!-- Interactive Dashboard Section -->
-    <section class="dashboard-section" id="dashboards">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="section-header fade-in">
-                        <h2 class="section-title">Interactive Dashboard</h2>
-                        <div class="section-divider"></div>
-                        <p class="dashboard-subtitle">
-                            Experience my latest Power BI dashboard showcasing real-time business metrics and insights.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="dashboard-container fade-in">
-                        <div class="dashboard-header">
-                            <h3 class="dashboard-title">Business Performance Dashboard</h3>
-                            <p class="dashboard-description">Real-time analytics and KPI tracking</p>
-                        </div>
 
-                        <div class="dashboard-content">
-                            <div class="dashboard-placeholder">
-                                <div class="placeholder-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <h4 class="placeholder-title">Power BI Dashboard Placeholder</h4>
-        
-                                <iframe title="AdventureWorks Report_FINAL" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=6e04946a-5fba-413c-b8d5-375d58d551ec&autoAuth=true&ctid=8c84ac10-5079-4ce5-ad7a-1b1092d940c3" frameborder="0" allowFullScreen="true"></iframe>
-
-                                
-                                <div class="placeholder-footer">
-                                    <p class="placeholder-note">Interactive Dashboard Will Appear Here</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Modal Structure -->
+<div id="powerbiModal" class="modal">
+  <div class="modal-iframe-wrapper">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <iframe id="powerbiIframe" src="#" frameborder="0" allowfullscreen="true"></iframe>
+  </div>
+</div>
 
     <!-- Contact Section -->
     <footer id="contact">
