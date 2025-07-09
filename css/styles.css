@@ -1077,8 +1077,9 @@
       .project-icon {
           width: 60px;
           height: 60px;
-          font-size: 1.5rem;
+          font-size: 3rem;
       }
+
   }
 
   /* Smooth scrolling */
