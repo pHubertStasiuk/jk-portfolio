@@ -1140,3 +1140,141 @@
 .modal-close:hover {
   color: #000;
 }
+
+/* === Modal-Specific Enhancements === */
+.modal-content-section {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #f1f1f1;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-icon i {
+  font-size: 2.2rem;
+  color: #6decb9;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: #80d0c7;
+  padding: 5px 10px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+}
+
+.result-item {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.result-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.result-label {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-top: 6px;
+}
+
+.process-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-number {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: #6decb9;
+  color: #1c1c1c;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.step-content p, .step-content ul {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.step-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 6px;
+}
+
+
+@media (max-width: 768px) {
+  .process-step {
+    flex-direction: column;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+}

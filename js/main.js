@@ -152,3 +152,63 @@ window.addEventListener('load', function () {
       }
     }
   });
+
+  // Handle Power BI buttons (already in your code)
+document.querySelectorAll(".project-cta-primary").forEach(button => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    const projectId = this.getAttribute("data-project-id");
+    const iframe = document.getElementById("powerbiIframe");
+    iframe.src = powerBiUrls[projectId];
+
+    const modal = document.getElementById("powerbiModal");
+    modal.style.display = "block";
+
+    if (modal.requestFullscreen) modal.requestFullscreen();
+    else if (modal.webkitRequestFullscreen) modal.webkitRequestFullscreen();
+    else if (modal.msRequestFullscreen) modal.msRequestFullscreen();
+  });
+});
+
+// Close Power BI modal
+document.getElementById("closeModalBtn").addEventListener("click", function () {
+  const modal = document.getElementById("powerbiModal");
+  modal.style.display = "none";
+  document.getElementById("powerbiIframe").src = "";
+
+  if (document.exitFullscreen) document.exitFullscreen();
+  else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+  else if (document.msExitFullscreen) document.msExitFullscreen();
+});
+
+// Open Case Study modal
+document.querySelectorAll(".project-cta-secondary").forEach(button => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    const modal = document.getElementById("caseStudyModal");
+    modal.style.display = "block";
+    modal.requestFullscreen();
+  });
+});
+
+// Close Case Study modal
+document.getElementById("closeCaseStudyBtn").addEventListener("click", function () {
+  const modal = document.getElementById("caseStudyModal");
+  modal.style.display = "none";
+});
+
+// Close either modal by clicking the background
+window.addEventListener("click", function (e) {
+  const powerModal = document.getElementById("powerbiModal");
+  const caseModal = document.getElementById("caseStudyModal");
+
+  if (e.target === powerModal) {
+    powerModal.style.display = "none";
+    document.getElementById("powerbiIframe").src = "";
+    if (document.exitFullscreen) document.exitFullscreen();
+  }
+
+  if (e.target === caseModal) {
+    caseModal.style.display = "none";
+  }
+});
