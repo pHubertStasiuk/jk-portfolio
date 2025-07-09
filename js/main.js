@@ -248,28 +248,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 projectId = 'customer-segmentation';
             }
 
-            // Titles & Subtitles can still be hardcoded or fetched elsewhere
-            const titles = {
-                'sales-performance': {
-                    title: 'Sales Performance Dashboard',
-                    subtitle: 'Comprehensive Power BI analytics solution'
-                },
-                'etl-pipeline': {
-                    title: 'ETL Pipeline Azure',
-                    subtitle: 'Automated data processing with Azure Data Factory'
-                },
-                'customer-segmentation': {
-                    title: 'Customer Segmentation Analysis',
-                    subtitle: 'Advanced analytics for targeted marketing'
-                }
-            };
-
             const path = caseStudyPaths[projectId];
             fetch(path)
                 .then(response => response.text())
                 .then(html => {
-                    document.getElementById('caseStudyTitle').textContent = titles[projectId].title;
-                    document.getElementById('caseStudySubtitle').textContent = titles[projectId].subtitle;
                     document.getElementById('caseStudyBody').innerHTML = html;
                     caseStudyModal.style.display = 'block';
                     document.body.style.overflow = 'hidden';
