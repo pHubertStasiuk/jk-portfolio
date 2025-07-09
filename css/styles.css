@@ -119,6 +119,7 @@
       background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
       border-radius: 50%;
       animation: float 8s ease-in-out infinite reverse;
+      z-index: 1;
   }
 
   @keyframes float {
@@ -771,7 +772,6 @@
 
       .floating-element-1 {
           top: 5%;
-          right: 5%;
       }
 
       .floating-element-2 {
