@@ -44,25 +44,22 @@ function animateCounter(element) {
 }
 
 // Trigger counter animation when stats section is visible
-function initializeStatsObserver() {
-    const statsSection = document.querySelector('.stats-container');
-    if (!statsSection) return;
+const statsObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                animateCounter(counter);
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
 
-    const statsObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counters = entry.target.querySelectorAll('.stat-number');
-                counters.forEach(counter => {
-                    animateCounter(counter);
-                });
-                statsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
+const statsSection = document.querySelector('.stats-container');
+if (statsSection) {
     statsObserver.observe(statsSection);
 }
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
