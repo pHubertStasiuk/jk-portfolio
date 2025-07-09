@@ -22,11 +22,332 @@
 </script>
 
 <body>
-    <div data-include="/components/navbar.html"></div>
-    <div data-include="/components/hero.html"></div>
-    <div data-include="/components/about-me.html"></div>
-    <div data-include="/components/skills.html"></div>
-    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="brand-icon">J</div>
+                Kadlewicz
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/joanna-kadlewicz-32b4a62b3/" class="hero-social-link"
+                        title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/JoannaKadlewicz/" class="hero-social-link" title="GitHub"
+                        target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:kontakt@joannakadlewicz.me" class="hero-social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="/assets/files/dummy_cv.pdf" class="hero-social-link" download title="Download CV">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in">
+                        <h1>Make <span class="highlight">Data Insights</span> That Engage, Delight, and Connect</h1>
+                        <p class="subtitle">
+                            Hi, I'm Joanna! With expertise in SQL, Power BI, Azure, Python,
+                            I'm ready to take the next step of your data analytics project.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="/assets/files/dummy_cv.pdf" class="cta-primary">
+                                <i class="fa-regular fa-file"></i> Download CV
+
+                            </a>
+                            <a href="#about" class="cta-secondary">
+                                <i class="fas fa-rocket"></i> View my journey
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image fade-in">
+                        <!-- Floating Elements -->
+                        <img src="/assets/icons/power_bi_logo.png" alt="Power BI"
+                            class="floating-element floating-element-1 floating-icon" />
+
+                        <img src="/assets/icons/psql_logo.png" alt="Postgresql"
+                            class="floating-element floating-element-2 floating-icon" />
+
+                        <img src="/assets/icons/azure_logo.png" alt="Azure"
+                            class="floating-element floating-element-3 floating-icon" />
+
+                        <img src="/assets/icons/python_logo.png" alt="Python"
+                            class="floating-element floating-element-4 floating-icon" />
+
+                        <div class="image-wrapper">
+                            <div class="image-container"></div>
+                            <div class="profile-image">
+                                <img src="/assets/img/image.png" alt="profile-image" class="profile-pic" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Enhanced About Me Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">My Data Journey</h2>
+                        <div class="section-divider"></div>
+                        <p
+                            style="font-size: 1.1rem; color: var(--text-gray); max-width: 600px; margin: 0 auto; margin-bottom: 2rem;">
+                            Where marketing intuition meets analytical precision - transforming business questions into
+                            data-driven solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journey Timeline -->
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="timeline-title">Marketing Foundation</div>
+                    <div class="timeline-subtitle">Understanding Business Impact</div>
+                    <div class="timeline-description">
+                        Built a solid foundation in marketing, learning to identify customer pain points, measure
+                        campaign effectiveness, and translate business objectives into actionable strategies. This
+                        experience taught me the critical skill of asking the right questions - the foundation of great
+                        data analysis.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-title">Technical Transformation</div>
+                    <div class="timeline-subtitle">Building Analytical Arsenal</div>
+                    <div class="timeline-description">
+                        Recognized the power of data in marketing and dove deep into SQL, Power BI, Azure, and Python.
+                        Earned Microsoft certifications (PL-300 Power BI, DP-900 Azure Data) while applying these skills
+                        to
+                        real marketing challenges, creating a unique blend of business acumen and technical expertise.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-title">Data-Driven Future</div>
+                    <div class="timeline-subtitle">Ready for Analytics Excellence</div>
+                    <div class="timeline-description">
+                        Now combining marketing insight with data engineering skills to solve complex business problems.
+                        I don't just build dashboards - I craft data stories that drive decisions, optimize processes,
+                        and unlock hidden opportunities in your data.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Showcase -->
+            <div class="certifications-showcase">
+                <h3 style="text-align: center; font-weight: 700; margin-bottom: 2rem; color: var(--text-dark);">
+                    Microsoft Certified Professional
+                </h3>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="cert-badge">
+                            <div class="cert-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="cert-title">Power BI Data Analyst</div>
+                            <div class="cert-subtitle">PL-300 Certification</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="cert-badge">
+                            <div class="cert-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="cert-title">Azure Data Fundamentals</div>
+                            <div class="cert-subtitle">DP-900 Certification</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing Superpower Section -->
+            <div class="superpower-section">
+                <h3 class="superpower-title">Why Marketing Background is My Superpower</h3>
+                <div class="superpower-grid">
+                    <div class="superpower-item">
+
+                        <h4>Business Context</h4>
+                        <p>I understand what metrics actually matter to stakeholders and can translate technical
+                            findings into business impact.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Storytelling with Data</h4>
+                        <p>Marketing taught me to craft compelling narratives - now I tell stories with data that
+                            inspire action.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Customer-Centric Analysis</h4>
+                        <p>I naturally approach data analysis from the customer's perspective, uncovering insights that
+                            drive growth.</p>
+                    </div>
+                    <div class="superpower-item">
+
+                        <h4>Results-Driven Mindset</h4>
+                        <p>Marketing experience means I focus on analyses that directly impact ROI and business
+                            outcomes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Metrics -->
+            <div class="stats-container fade-in">
+
+                <h3 style="text-align: center; font-weight: 700; margin-bottom: 1rem; color: var(--text-dark);">
+                    Impact & Expertise
+                </h3>
+                <div class="section-divider"></div>
+                <p style="text-align: center; color: var(--text-gray); margin-bottom: 2rem;">
+                    Measurable results that showcase the power of marketing-driven data analysis
+                </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <div class="stat-item-container stat-item">
+                            <span class="stat-number" data-target="120">0</span>
+                            <span class="stat-label">SQL Problems Solved</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">Dashboards built</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1200">0</span>
+                            <span class="stat-label">Hours learning</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="12">0</span>
+                            <span class="stat-label">Skills Mastered</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Data Integrations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Technical Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="section-header fade-in">
+                        <h2 class="section-title">Technical Skills</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4 class="skill-title">Data Analysis</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Data Modeling</span>
+                            <span class="skill-tag">Analytical Thinking</span>
+                            <span class="skill-tag">Data Cleaning</span>
+                            <span class="skill-tag">KPI Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="skill-title">Business Intelligance</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">DAX</span>
+                            <span class="skill-tag">Power Query</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Interactive Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4 class="skill-title">Technical Tools & Cloud Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Azure Data</span>
+                            <span class="skill-tag">ETL Pipelines</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Spreadsheets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Featured Projects Section -->
     <section class="projects-section" id="projects">
         <div class="container">
@@ -145,7 +466,40 @@
     </div>
 
 
-    <div data-include="/components/footer.html"></div>
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="footer-title">Let's Connect</h2>
+                <p>
+                    Ready to discuss data opportunities and collaborate on exciting projects.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kontakt@joannakadlewicz.me</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Poland</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/joanna-kadlewicz-32b4a62b3/" class="social-link"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/JoannaKadlewicz/" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:kontakt@joannakadlewicz.me" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div>&copy; 2025 Joanna Kadlewicz - Crafted with passion for data.</div>
+        </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
