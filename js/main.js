@@ -60,6 +60,7 @@ const statsSection = document.querySelector('.stats-container');
 if (statsSection) {
     statsObserver.observe(statsSection);
 }
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -211,22 +212,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Case Study Modal Functions
+function closeCaseStudyModal() {
+    const modal = document.getElementById('caseStudyModal');
+    modal.style.display = 'none';
+    document.getElementById('caseStudyBody').innerHTML = '';
+    document.body.style.overflow = 'auto';
+}
 
+// Global ESC key handler for case study modal
 document.addEventListener('keydown', function (event) {
     const modal = document.getElementById('caseStudyModal');
     if (event.key === 'Escape' && modal.style.display === 'block') {
-        modal.style.display = 'none';
-        document.getElementById('caseStudyBody').innerHTML = '';
-        document.body.style.overflow = 'auto';
+        closeCaseStudyModal();
     }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
-
     const caseStudyModal = document.getElementById('caseStudyModal');
-    const caseStudyClose = document.querySelector('.case-study-close');
     const caseStudyLinks = document.querySelectorAll('.project-cta-secondary');
 
     const caseStudyPaths = {
@@ -255,10 +258,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('caseStudyBody').innerHTML = html;
                     caseStudyModal.style.display = 'block';
                     document.body.style.overflow = 'hidden';
+                    
+                    // Add close button event listener
+                    const closeBtn = document.querySelector('.case-study-close');
+                    if (closeBtn) {
+                        closeBtn.addEventListener('click', closeCaseStudyModal);
+                    }
                 })
                 .catch(error => console.error('Error loading case study:', error));
         });
     });
 
+    // Click outside to close case study modal - target the modal backdrop
+    window.addEventListener('click', function(e) {
+        if (e.target === caseStudyModal) {
+            closeCaseStudyModal();
+        }
+    });
 });
-
