@@ -540,6 +540,7 @@
       transform: rotate(45deg);
       transition: all 0.6s ease;
       opacity: 0;
+      pointer-events: none;
   }
 
   .cert-badge:hover::before {
@@ -567,19 +568,6 @@
       box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
   }
 
-  .cert-icon {
-      width: 80px;
-      height: 80px;
-      background: var(--primary-gradient);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      margin: 0 auto 1rem;
-  }
-
   .cert-title {
       font-weight: 600;
       color: var(--text-dark);
@@ -592,8 +580,21 @@
       font-weight: 500;
   }
 
+
+  .cert-image {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 1.5rem;
+  }
+
+  .cert-link {
+      z-index: 100;
+      color: var(--primary-gradient);
+      cursor: pointer;
+  }
+
+
   .superpower-section {
-      /* background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); */
       background: var(--primary-gradient);
       border-radius: 25px;
       padding: 3rem;
