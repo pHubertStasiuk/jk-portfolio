@@ -1264,6 +1264,24 @@
       margin-bottom: 2rem;
   }
 
+  .case-study-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+  }
+
+  .case-study-close:hover {
+      color: var(--primary-gradient);
+      transform: scale(1.1);
+  }
+
+
   /* Grid Layouts */
   .tech-stack-grid {
       display: grid;
@@ -1282,7 +1300,7 @@
   }
 
   .tech-item h4 {
-     margin-bottom: 2rem;
+      margin-bottom: 2rem;
   }
 
   .tech-item-paragraph {
