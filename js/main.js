@@ -99,7 +99,7 @@ window.addEventListener('load', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     const powerBiUrls = {
-        "sales-performance": "https://app.powerbi.com/view?r=eyJrIjoiNTZlZmVmMmMtMTM1My00OWNhLWIzNDItNjQ3YjBhZTc5YzMxIiwidCI6IjI5OWJlMzdlLWEyZTItNDY3OC1iYzc5LWMxOTJmNDVjNGQxMyJ9",
+        "sales-performance": "https://app.powerbi.com/view?r=eyJrIjoiYzY0OGNkMjYtMGYwYi00MmFkLTg3ZGMtM2VkMTYxMDkyMGEyIiwidCI6IjI5OWJlMzdlLWEyZTItNDY3OC1iYzc5LWMxOTJmNDVjNGQxMyJ9",
         "etl-pipeline": "https://your-etl-dashboard-url",
         "customer-segmentation": "https://your-customer-segmentation-url"
     };
