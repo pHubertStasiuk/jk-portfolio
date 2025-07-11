@@ -5,15 +5,15 @@
         <p class="case-study-subtitle">Transforming Raw Sales Data into Actionable Business Intelligence</p>
         <div class="case-study-meta">
             <div class="meta-item">
-                <i class="fas fa-clock"></i>
-                <span>3 Month Project</span>
+                <i class="fa-solid fa-square-poll-horizontal" aria-hidden="true"></i>
+                <span>4 Interactive Pages</span>
             </div>
             <div class="meta-item">
-                <i class="fas fa-users"></i>
-                <span>Cross-functional Team</span>
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <span>Cross-functional Audience</span>
             </div>
             <div class="meta-item">
-                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
                 <span>15% Sales Increase</span>
             </div>
         </div>
@@ -29,39 +29,98 @@
                 <i class="fas fa-bullseye"></i>
                 Project Overview
             </h2>
-            <div class="section-description">
-                <p>The Sales Performance Dashboard project was initiated to address the growing need for real-time sales
-                    insights and data-driven decision making across our organization. With sales data scattered across
-                    multiple systems and manual reporting processes taking weeks to complete, our sales teams were
-                    operating with outdated information and limited visibility into key performance indicators.</p>
 
-                <p>This comprehensive business intelligence solution transforms raw sales data from multiple sources
-                    into a unified, interactive dashboard that provides actionable insights, trend analysis, and
-                    predictive capabilities. The dashboard serves as the central hub for sales teams, management, and
-                    executive leadership to track performance, identify opportunities, and make strategic decisions
-                    based on real-time data.</p>
+            <div class="section-description">
+                <p>
+                    This Power BI dashboard was created to address a critical business need:
+                    <strong>enabling leadership and sales teams to make data-driven decisions based on real-time
+                        performance metrics</strong>.
+                    AdventureWorks, a cycling retail company, needed a consolidated view of product performance,
+                    customer behavior, and operational efficiency to optimize sales strategies and reduce product return
+                    rates.
+                </p>
+
+                <!-- Business Problem -->
+                <h3>🎯 Business Problem</h3>
+                <p>
+                    Prior to this solution, decision-makers struggled with siloed data across sales, product returns,
+                    and customer demographics. The lack of centralized insights made it difficult to identify
+                    underperforming products, high-value customers, or areas where profit margins could be improved.
+                </p>
+
+                <!-- Target Audience -->
+                <h3>👥 Target Audience</h3>
+                <ul>
+                    <li><strong>Executives & Leadership:</strong> High-level view of financial performance, profit
+                        trends, and sales growth.</li>
+                    <li><strong>Sales & Product Managers:</strong> Insights into top-selling and most-returned products,
+                        revenue per product, and order trends.</li>
+                    <li><strong>Customer Insights Teams:</strong> Understand customer behavior across income and
+                        occupation segments for targeted marketing.</li>
+                </ul>
+
+                <!-- Insights Delivered -->
+                <h3>📊 Insights Delivered</h3>
+                <ul>
+                    <li><strong>Total revenue:</strong> $24.9M with $10.5M in profit across 25.2K orders.</li>
+                    <li><strong>Product-level analytics:</strong> Top 10 products by revenue and return rates to improve
+                        inventory and pricing.</li>
+                    <li><strong>Customer segmentation:</strong> Distribution by income and job category for personalized
+                        campaigns.</li>
+                    <li><strong>Returns analysis:</strong> 2.2% return rate with flagged high-risk items like “Shorts”.
+                    </li>
+                    <li><strong>Sales trends:</strong> Revenue and order trends to support strategic planning and
+                        seasonality analysis.</li>
+                </ul>
+
+                <!-- Tools Used -->
+                <h3>🛠️ Tools Used</h3>
+                <p>
+                    <strong>Power BI</strong> was the primary tool, leveraging <strong>Power Query</strong> for data
+                    import and cleaning using built-in transformation functions.
+                    The data model was structured using the <strong>star schema</strong> approach with well-defined
+                    relationships.
+                    <strong>DAX</strong> was used to build robust measures and calculated columns.
+                    The dashboard takes advantage of Power BI's features such as <strong>dynamic filtering</strong>,
+                    <strong>time-intelligence functions</strong>, <strong>time-based trends</strong>, and
+                    <strong>category-level breakdowns</strong> to deliver rapid, actionable insights.
+                </p>
+
+                <!-- Outcome -->
+                <h3>💡 Outcome</h3>
+                <p>
+                    The dashboard empowers AdventureWorks with a single source of truth. It reduces time spent on manual
+                    reporting,
+                    uncovers key trends, and provides stakeholders with insights to grow revenue and improve customer
+                    satisfaction.
+                </p>
             </div>
 
+            <!-- Tech Summary Grid -->
             <div class="tech-stack-grid">
                 <div class="tech-item">
-                    <i class="fas fa-bullseye"></i>
+                    <i class="fas fa-bullseye" aria-hidden="true"></i>
                     <h4>Goal</h4>
-                    <p>Centralize sales data and enable real-time reporting</p>
+                    <p>Consolidate fragmented sales data into a single, up-to-date dashboard for better decision-making
+                    </p>
+
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
                     <h4>Impact</h4>
-                    <p>40% faster reporting, 15% sales increase</p>
+                    <p>Significantly reduced manual reporting time and 15% improvement in sales performance</p>
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-users" aria-hidden="true"></i>
                     <h4>Stakeholders</h4>
-                    <p>Sales teams, management, executives</p>
+                    <p>Executives, Sales Managers, Product Teams, and Customer Insights Analysts</p>
+
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-clock"></i>
-                    <h4>Timeline</h4>
-                    <p>3 months from conception to deployment</p>
+                    <i class="fas fa-database" aria-hidden="true"></i>
+                    <h4>Data Volume</h4>
+                    <p>25,000+ orders, 17,000 customers, integrated from 10+ data tables across multiple sources</p>
+
                 </div>
             </div>
         </div>
@@ -73,31 +132,48 @@
                 Tools & Technology Stack
             </h2>
             <div class="section-description">
-                <p>The project leveraged a robust technology stack optimized for enterprise-scale data processing and
-                    visualization. Each tool was strategically chosen to address specific requirements including data
-                    integration, transformation, modeling, and visualization capabilities.</p>
+                <p>
+                    The solution was built using a carefully selected stack of tools tailored for efficient data import,
+                    transformation, modeling, and interactive reporting.
+                    Each component played a key role in enabling actionable insights and business-ready dashboards.
+                </p>
             </div>
 
             <div class="tech-stack-grid">
                 <div class="tech-item">
-                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
                     <h4>Microsoft Power BI</h4>
-                    <p>Primary visualization and reporting platform with advanced analytics capabilities</p>
+                    <p>
+                        Primary platform for interactive dashboards and visual analytics, leveraging features like
+                        dynamic filtering, time-based trends, and category-level breakdowns.
+                    </p>
                 </div>
+
                 <div class="tech-item">
-                    <i class="fas fa-database"></i>
-                    <h4>SQL Server</h4>
-                    <p>Data warehouse and primary data storage solution with optimized queries</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-code"></i>
-                    <h4>DAX (Data Analysis Expressions)</h4>
-                    <p>Advanced calculations, measures, and business logic implementation</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-filter"></i>
+                    <i class="fas fa-database" aria-hidden="true"></i>
                     <h4>Power Query</h4>
-                    <p>Data transformation and cleaning with automated ETL processes</p>
+                    <p>
+                        Used to import data from flat files (CSV, Excel) and perform data cleaning and transformations
+                        using built-in functions and applied steps.
+                    </p>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                    <h4>Data Modeling</h4>
+                    <p>
+                        Created a star schema model within Power BI with defined relationships between fact and
+                        dimension tables to support efficient filtering and aggregation.
+                    </p>
+                </div>
+
+                <div class="tech-item">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <h4>DAX (Data Analysis Expressions)</h4>
+                    <p>
+                        Developed measures and calculated columns for KPIs, time-intelligence analysis, and business
+                        logic implementation.
+                    </p>
                 </div>
             </div>
         </div>
@@ -109,50 +185,55 @@
                 Data Sources & Data Model
             </h2>
             <div class="section-description">
-                <p>The dashboard integrates data from five primary sources, creating a comprehensive view of sales
-                    performance across all channels and touchpoints. A star schema data model was implemented to
-                    optimize query performance and ensure data integrity.</p>
+                <p>
+                    The dashboard was built using structured flat files (CSV and Excel), imported via Power Query into
+                    Power BI.
+                    A star schema data model was designed to support fast filtering, accurate aggregations, and
+                    intuitive analysis.
+                    Relationships were established between dimension and fact tables to optimize report performance and
+                    usability.
+                </p>
             </div>
 
             <div class="data-sources-grid">
                 <div class="data-source">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>CRM System (Salesforce)</h4>
+                    <i class="fas fa-file-excel" aria-hidden="true"></i>
+                    <h4>Flat Files (CSV/XLSX)</h4>
                     <ul>
-                        <li>Customer information</li>
-                        <li>Opportunity pipeline</li>
-                        <li>Sales activities</li>
-                        <li>Lead conversion data</li>
+                        <li>Sales transactions</li>
+                        <li>Product details</li>
+                        <li>Customer demographics</li>
+                        <li>Returns and order history</li>
+                    </ul>
+                </div>
+
+                <div class="data-source">
+                    <i class="fas fa-layer-group" aria-hidden="true"></i>
+                    <h4>Dimensional Tables</h4>
+                    <ul>
+                        <li>Calendar table</li>
+                        <li>Customer table</li>
+                        <li>Product table</li>
+                        <li>Category table</li>
+                        <li>Territory table</li>
                     </ul>
                 </div>
                 <div class="data-source">
-                    <i class="fas fa-receipt"></i>
-                    <h4>ERP System (SAP)</h4>
+                    <i class="fas fa-stream" aria-hidden="true"></i>
+                    <h4>Fact Tables</h4>
                     <ul>
-                        <li>Invoice data</li>
-                        <li>Product information</li>
-                        <li>Pricing details</li>
-                        <li>Financial records</li>
+                        <li>Sales table</li>
+                        <li>Returns table</li>
                     </ul>
                 </div>
                 <div class="data-source">
-                    <i class="fas fa-globe"></i>
-                    <h4>E-commerce Platform</h4>
+                    <i class="fas fa-table" aria-hidden="true"></i>
+                    <h4>Measure Table</h4>
                     <ul>
-                        <li>Online sales data</li>
-                        <li>Customer behavior</li>
-                        <li>Product performance</li>
-                        <li>Digital marketing metrics</li>
-                    </ul>
-                </div>
-                <div class="data-source">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Marketing Automation</h4>
-                    <ul>
-                        <li>Campaign performance</li>
-                        <li>Lead scoring</li>
-                        <li>Attribution data</li>
-                        <li>Customer journey</li>
+                        <li>Calculated KPIs using DAX</li>
+                        <li>Time-intelligence metrics</li>
+                        <li>Sales, profit, returns insights</li>
+                        <li>Rolling averages & YoY comparisons</li>
                     </ul>
                 </div>
             </div>
@@ -165,8 +246,10 @@
                 ETL / Data Pipeline Process
             </h2>
             <div class="section-description">
-                <p>A robust ETL pipeline was implemented to ensure data quality, consistency, and timely updates. The
-                    process runs on a scheduled basis with automated error handling and notification systems.</p>
+                <p>
+                    The data preparation process was designed using flat files (CSV), Power Query, and DAX in Power BI.
+                    It ensures clean, structured, and reliable data for reporting.
+                </p>
             </div>
 
             <div class="process-timeline">
@@ -174,36 +257,40 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h4>Data Extraction</h4>
-                        <p>Automated extraction from multiple source systems using API connections and scheduled
-                            database queries. Data is extracted in real-time for critical metrics and batch processed
-                            for historical analysis.</p>
+                        <p>
+                            Flat files (CSV) were imported directly into Power BI. All source files are organized in a
+                            structured folder system, allowing for simple refresh and version control.
+                        </p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Data Transformation</h4>
-                        <p>Comprehensive data cleaning, validation, and transformation using Power Query. This includes
-                            handling missing values, standardizing formats, and implementing business rules for data
-                            consistency.</p>
+                        <h4>Data Cleaning</h4>
+                        <p>
+                            Power Query was used to clean and shape the data — including removing duplicates, filtering
+                            invalid records, replacing missing values, and standardizing column formats.
+                        </p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Data Loading</h4>
-                        <p>Optimized loading into the data warehouse with incremental updates and change data capture.
-                            The process includes data validation checks and automated rollback procedures for failed
-                            loads.</p>
+                        <h4>Data Transformation</h4>
+                        <p>
+                            Using Power Query and DAX, business logic was applied such as conditional columns, derived
+                            metrics, calculated tables, and relationship modeling for accurate analysis.
+                        </p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h4>Quality Assurance</h4>
-                        <p>Automated data quality checks, validation rules, and monitoring systems to ensure data
-                            integrity. This includes duplicate detection, referential integrity checks, and business
-                            rule validation.</p>
+                        <h4>Data Validation</h4>
+                        <p>
+                            Cross-checks were implemented to ensure consistency, including record counts, expected value
+                            checks, and referential integrity validation across dimension and fact tables.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -222,51 +309,56 @@
 
             <div class="dax-examples">
                 <div class="dax-example">
-                    <div class="dax-example-title">Sales Growth Rate (YoY)</div>
-                    <div class="dax-code">
-                        Sales Growth YoY =
-                        VAR CurrentYear = TOTALYTD([Total Sales], 'Date'[Date])
-                        VAR PreviousYear = TOTALYTD([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
-                        RETURN
-                        DIVIDE(CurrentYear - PreviousYear, PreviousYear, 0)
-                    </div>
-                </div>
-
-                <div class="dax-example">
-                    <div class="dax-example-title">Customer Lifetime Value</div>
-                    <div class="dax-code">
-                        Customer LTV =
-                        VAR AvgOrderValue = AVERAGEX(
-                        RELATEDTABLE('Sales'),
-                        'Sales'[Amount]
-                        )
-                        VAR PurchaseFrequency = COUNTROWS(RELATEDTABLE('Sales'))
-                        VAR CustomerLifespan = DATEDIFF(
-                        MIN(RELATEDTABLE('Sales'[Date])),
-                        MAX(RELATEDTABLE('Sales'[Date])),
-                        MONTH
-                        )
-                        RETURN
-                        AvgOrderValue * PurchaseFrequency * (CustomerLifespan / 12)
-                    </div>
-                </div>
-
-                <div class="dax-example">
-                    <div class="dax-example-title">Rolling 12-Month Average</div>
-                    <div class="dax-code">
-                        Rolling 12M Average =
-                        AVERAGEX(
-                        DATESINPERIOD(
-                        'Date'[Date],
-                        LASTDATE('Date'[Date]),
-                        -12,
-                        MONTH
-                        ),
-                        [Total Sales]
-                        )
-                    </div>
+                    <div class="dax-example-title">10-day Rolling Revenue =</div>
+                    <pre class="dax-code"><code>CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Calendar Lookup'[Date],
+         MAX('Calendar Lookup'[Date]), -10, DAY)
+)</code></pre>
                 </div>
             </div>
+
+            <div class="dax-examples">
+                <div class="dax-example">
+                    <div class="dax-example-title">Adjusted Revenue =</div>
+                    <pre class="dax-code"><code>SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * [Adjusted Price]
+)</code></pre>
+                </div>
+            </div>
+            <div class="dax-examples">
+                <div class="dax-example">
+                    <div class="dax-example-title">Order Target Gap =</div>
+                    <pre class="dax-code"><code>[Total Orders] - ([Previous Month Orders] * 1.1)</code></pre>
+                </div>
+            </div>
+
+            <div class="dax-examples">
+                <div class="dax-example">
+                    <div class="dax-example-title">YTD Revenue =</div>
+                    <pre class="dax-code"><code>CALCULATE(
+    [Total Revenue],
+    DATESYTD('Calendar Lookup'[Date])
+)</code></pre>
+                </div>
+            </div>
+
+            <div class="dax-examples">
+                <div class="dax-example">
+                    <div class="dax-example-title">Previous Month Revenue =</div>
+                    <pre class="dax-code"><code>CALCULATE(
+    [Total Revenue],
+    DATEADD(
+        'Calendar Lookup'[Date], -1, MONTH 
+    )
+)</code></pre>
+                </div>
+            </div>
+
+
+
         </div>
 
         <!-- Dashboard Walkthrough -->
