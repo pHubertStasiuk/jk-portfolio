@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('caseStudyBody').innerHTML = html;
                     caseStudyModal.style.display = 'block';
                     document.body.style.overflow = 'hidden';
-                    
+
                     // Add close button event listener
                     const closeBtn = document.querySelector('.case-study-close');
                     if (closeBtn) {
@@ -270,9 +270,59 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Click outside to close case study modal - target the modal backdrop
-    window.addEventListener('click', function(e) {
+    window.addEventListener('click', function (e) {
         if (e.target === caseStudyModal) {
             closeCaseStudyModal();
         }
     });
 });
+
+
+
+function showTab(tabName) {
+    // Update active button
+    document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Update tab content
+    const tabContent = document.getElementById('tab-content');
+    const contents = {
+        'executive': {
+            path: '/assets/img/case-studies/sales/executive-overview-dashboard.png',
+            title: 'Executive Overview Dashboard'
+        },
+        'sales': {
+            path: '/assets/img/case-studies/sales/sales-analytics-dashboard.png',
+            title: 'Sales Performance Dashboard'
+        },
+        'product': {
+            path: '/assets/img/case-studies/sales/product-analytics-dashboard.png',
+            title: 'Product Analytics Dashboard'
+        },
+        'regional': {
+            path: '/assets/img/case-studies/sales/regional-analysis-dashboard.png',
+            title: 'Regional Analysis Dashboard'
+        }
+    };
+
+    const content = contents[tabName];
+
+    document.querySelector('.tab-image').src = '${content.path}'
+
+
+    const newImg = new Image();
+    newImg.src = content.path;
+    newImg.alt = content.title;
+    newImg.className = 'tab-image';
+
+    newImg.onload = function () {
+        tabContent.innerHTML = '';
+        const wrapper = document.createElement('div');
+        wrapper.className = 'tab-placeholder';
+        wrapper.appendChild(newImg);
+        tabContent.appendChild(wrapper);
+    };
+}
+

@@ -74,7 +74,7 @@
 
                 </div>
                 <div class="tech-item">
-                    <i class="fas fa-database" aria-hidden="true"></i>
+                    <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
                     <h4>Outcome</h4>
                <p class="tech-item-paragraph">
                     The dashboard empowers with a single source of truth. Reduces time spent on manual
@@ -104,7 +104,7 @@
 
             <div class="tech-stack-grid">
                 <div class="tech-item">
-                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                    <img src="/assets/icons/case-studies/power-bi.png" alt="Power BI" class="case-study-icons" />
                     <h4>Microsoft Power BI</h4>
                     <p>
                         Primary platform for interactive dashboards and visual analytics, leveraging features like
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="tech-item">
-                    <i class="fas fa-database" aria-hidden="true"></i>
+                    <img src="/assets/icons/case-studies/power-query.png" alt="Power Query" class="case-study-icons" />
                     <h4>Power Query</h4>
                     <p>
                         Used to import data from flat files (CSV, Excel) and perform data cleaning and transformations
@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="tech-item">
-                    <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                    <img src="/assets/icons/case-studies/data-model.png" alt="Data Model" class="case-study-icons" />
                     <h4>Data Modeling</h4>
                     <p>
                         Created a star schema model within Power BI with defined relationships between fact and
@@ -131,8 +131,8 @@
                 </div>
 
                 <div class="tech-item">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    <h4>DAX (Data Analysis Expressions)</h4>
+                    <img src="/assets/icons/case-studies/dax.png" alt="DAX" class="case-study-icons" />
+                    <h4>Data Analysis Expressions</h4>
                     <p>
                         Developed measures and calculated columns for KPIs, time-intelligence analysis, and business
                         logic implementation.
@@ -324,102 +324,26 @@
 
         </div>
 
-        <!-- Dashboard Walkthrough -->
-        <div class="section">
-            <h2 class="case-section-title">
+             <!-- Interactive Dashboard Preview -->
+        <div class="dashboard-preview">
+            <div class="preview-header">
+                     <h2 class="case-section-title">
                 <i class="fas fa-desktop"></i>
                 Dashboard Walkthrough
             </h2>
-            <div class="section-description">
-                <p>The dashboard consists of multiple interconnected pages, each designed for specific user roles and
-                    business requirements. The intuitive navigation and consistent design ensure a seamless user
-                    experience.</p>
             </div>
-
-            <div class="dashboard-pages">
-                <div class="dashboard-page">
-                    <h4><i class="fas fa-chart-line"></i> Executive Overview</h4>
-                    <p>High-level KPIs and trend analysis for executive decision-making. Features include revenue
-                        summaries, growth metrics, market share analysis, and strategic initiative tracking with
-                        drill-down capabilities for detailed analysis.</p>
-                </div>
-
-                <div class="dashboard-page">
-                    <h4><i class="fas fa-users"></i> Sales Performance</h4>
-                    <p>Individual and team performance tracking with quota attainment, pipeline analysis, and activity
-                        metrics. Includes sales funnel visualization, conversion rates, and performance comparisons
-                        across different time periods.</p>
-                </div>
-
-                <div class="dashboard-page">
-                    <h4><i class="fas fa-map"></i> Regional Analysis</h4>
-                    <p>Geographic sales distribution with interactive maps, regional performance comparisons, and
-                        territory management insights. Features heat maps, regional growth trends, and market
-                        penetration analysis.</p>
-                </div>
-
-                <div class="dashboard-page">
-                    <h4><i class="fas fa-box"></i> Product Performance</h4>
-                    <p>Product-level analysis including sales by category, top-performing products, inventory insights,
-                        and profitability analysis. Includes product lifecycle tracking and competitive analysis
-                        features.</p>
-                </div>
-
-                <div class="dashboard-page">
-                    <h4><i class="fas fa-user-tie"></i> Customer Analytics</h4>
-                    <p>Customer segmentation, lifetime value analysis, churn prediction, and satisfaction metrics.
-                        Features customer journey mapping, retention analysis, and personalized engagement insights.</p>
-                </div>
+            
+            <div class="preview-tabs">
+                <button class="tab-button active" onclick="showTab('executive')">Executive Overview</button>
+                <button class="tab-button" onclick="showTab('sales')">Sales Performance</button>
+                <button class="tab-button" onclick="showTab('product')">Product Analytics</button>
+                <button class="tab-button" onclick="showTab('regional')">Regional Analysis</button>
             </div>
-        </div>
+            
+            <div class="tab-content" id="tab-content">
+           <div class="tab-placeholder">
+                    <img src="/assets/img/case-studies/sales/executive-overview-dashboard.png" alt="Executive Overview Dashboard" class="tab-image" />
 
-        <!-- Challenges & Solutions -->
-        <div class="section">
-            <h2 class="case-section-title">
-                <i class="fas fa-exclamation-triangle"></i>
-                Challenges & Solutions
-            </h2>
-            <div class="section-description">
-                <p>The project encountered several technical and business challenges that required innovative solutions
-                    and strategic problem-solving approaches.</p>
-            </div>
-
-            <div class="challenge-solution-grid">
-                <div class="challenge-card">
-                    <h4><i class="fas fa-times-circle"></i> Data Integration Complexity</h4>
-                    <p>Multiple data sources with inconsistent formats, missing historical data, and varying update
-                        frequencies created significant integration challenges and data quality issues.</p>
-                </div>
-                <div class="solution-card">
-                    <h4><i class="fas fa-check-circle"></i> Robust ETL Framework</h4>
-                    <p>Implemented comprehensive ETL processes with automated data validation, standardization rules,
-                        and error handling. Created a master data management system for consistent data definitions.</p>
-                </div>
-            </div>
-
-            <div class="challenge-solution-grid">
-                <div class="challenge-card">
-                    <h4><i class="fas fa-times-circle"></i> Performance Optimization</h4>
-                    <p>Large datasets and complex calculations caused slow query performance and timeout issues,
-                        impacting user experience and adoption rates.</p>
-                </div>
-                <div class="solution-card">
-                    <h4><i class="fas fa-check-circle"></i> Advanced Data Modeling</h4>
-                    <p>Implemented star schema design with optimized relationships, indexing strategies, and incremental
-                        refresh patterns. Created aggregated tables for improved query performance.</p>
-                </div>
-            </div>
-
-            <div class="challenge-solution-grid">
-                <div class="challenge-card">
-                    <h4><i class="Times-circle"></i> User Adoption</h4>
-                    <p>Resistance to change from traditional reporting methods and varying technical skill levels among
-                        users created adoption barriers and limited initial usage.</p>
-                </div>
-                <div class="solution-card">
-                    <h4><i class="fas fa-check-circle"></i> Change Management</h4>
-                    <p>Implemented comprehensive training programs, created user-friendly documentation, and established
-                        a feedback loop for continuous improvement. Identified power users as champions.</p>
                 </div>
             </div>
         </div>
