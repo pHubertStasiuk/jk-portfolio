@@ -16,7 +16,7 @@
                 <i class="fas fa-chart-line" aria-hidden="true"></i>
                 <span>15% Sales Increase</span>
 
-                
+
             </div>
         </div>
     </div>
@@ -42,50 +42,55 @@
                     rates.
                 </p>
 
-                         <!-- Tech Summary Grid -->
-            <div class="tech-stack-grid">
-                <div class="tech-item">
-                    <i class="fas fa-bullseye" aria-hidden="true"></i>
-                    <h4>Business Problem</h4>
-                
+                <!-- Tech Summary Grid -->
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        <h4>Business Problem</h4>
+
                         <p class="tech-item-paragraph">
-                  Prior to this solution, the lack of centralized insights made it difficult to identify underperforming products, high-value customers, or areas where profit margins could be improved.
-                </p>
+                            Prior to this solution, the lack of centralized insights made it difficult to identify
+                            underperforming products, high-value customers, or areas where profit margins could be
+                            improved.
+                        </p>
 
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-chart-line" aria-hidden="true"></i>
-                    <h4>Insights Delivered</h4>
-               
-                    <p class="tech-item-paragraph"><strong>$24.9M </strong>with <strong>$10.5M</strong> in profit across <strong>25.2K</strong> orders</p>
-                    <p class="tech-item-paragraph"><strong>Top 10</strong> products by revenue and return rates</p>
-                    <p class="tech-item-paragraph"><strong>2.2%</strong> return rate with flagged high-risk items like 'shorts'</p>
-            
-                
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-users" aria-hidden="true"></i>
-                    <h4>Stakeholders</h4>
-                       <ul>
-                    <li class="tech-item-paragraph">Executives & Leadership </li>
-                    <li class="tech-item-paragraph">Sales & Product Managers</li>
-                    <li class="tech-item-paragraph">Customer Insights Teams</li>
-                </ul>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <h4>Insights Delivered</h4>
 
+                        <p class="tech-item-paragraph"><strong>$24.9M </strong>with <strong>$10.5M</strong> in profit
+                            across <strong>25.2K</strong> orders</p>
+                        <p class="tech-item-paragraph"><strong>Top 10</strong> products by revenue and return rates</p>
+                        <p class="tech-item-paragraph"><strong>2.2%</strong> return rate with flagged high-risk items
+                            like 'shorts'</p>
+
+
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h4>Stakeholders</h4>
+                        <ul>
+                            <li class="tech-item-paragraph">Executives & Leadership </li>
+                            <li class="tech-item-paragraph">Sales & Product Managers</li>
+                            <li class="tech-item-paragraph">Customer Insights Teams</li>
+                        </ul>
+
+                    </div>
+                    <div class="tech-item">
+                        <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        <h4>Outcome</h4>
+                        <p class="tech-item-paragraph">
+                            The dashboard empowers with a single source of truth. Reduces time spent on manual
+                            reporting, uncovers key trends, and provides insights to grow revenue and improve customer
+                            satisfaction.
+                        </p>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-                    <h4>Outcome</h4>
-               <p class="tech-item-paragraph">
-                    The dashboard empowers with a single source of truth. Reduces time spent on manual
-                    reporting, uncovers key trends, and provides insights to grow revenue and improve customer satisfaction.
-                </p>
-                </div>
+
             </div>
-           
-            </div>
 
-   
+
         </div>
 
         <!-- Tools & Tech Stack -->
@@ -145,16 +150,14 @@
         <div class="section">
             <h2 class="case-section-title">
                 <i class="fas fa-database"></i>
-                Data Sources & Data Model
+                Data Sources
             </h2>
             <div class="section-description">
                 <p>
-                    The dashboard was built using structured flat files (CSV and Excel), imported via Power Query into
-                    Power BI.
-                    A star schema data model was designed to support fast filtering, accurate aggregations, and
-                    intuitive analysis.
-                    Relationships were established between dimension and fact tables to optimize report performance and
-                    usability.
+                    The dashboard utilizes structured data extracted from flat files, including CSV and Excel formats.
+                    These files were imported into Power BI using Power Query to ensure consistency and data cleansing
+                    prior to modeling. This approach allowed for controlled data ingestion while supporting repeatable
+                    refresh processes.
                 </p>
             </div>
 
@@ -200,6 +203,39 @@
                     </ul>
                 </div>
             </div>
+        </div>
+
+
+        <div class="section">
+            <h2 class="case-section-title">
+                <i class="fas fa-project-diagram"></i>
+                Data Model
+            </h2>
+            <div class="section-description">
+                <p>
+                    A star schema data model was implemented to enable efficient filtering and accurate aggregations.
+                    Fact tables were linked to dimension tables using optimized relationships, supporting intuitive
+                    slicing and dicing across key business metrics. This structure also improved report performance and
+                    ensured scalability as the dataset grows.
+                </p>
+            </div>
+
+            <div id="data-model-container">
+                <div class="preview-tabs" style="margin-top: 2rem;">
+                    <button class="tab-button active" onclick="showDataModelTab(event,'sales-data-model')">Sales Data
+                        Model</button>
+                    <button class="tab-button" onclick="showDataModelTab(event,'return-data-model')">Return Data
+                        Model</button>
+                </div>
+
+                <div class="tab-content" id="data-model-tab-content">
+                    <div class="tab-placeholder">
+                        <img src="/assets/img/case-studies/sales/sales-data-model.png" alt="Data Model"
+                            class="tab-image" />
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- ETL / Data Pipeline Process -->
@@ -324,26 +360,29 @@
 
         </div>
 
-             <!-- Interactive Dashboard Preview -->
+        <!-- Interactive Dashboard Preview -->
         <div class="dashboard-preview">
             <div class="preview-header">
-                     <h2 class="case-section-title">
-                <i class="fas fa-desktop"></i>
-                Dashboard Walkthrough
-            </h2>
+                <h2 class="case-section-title">
+                    <i class="fas fa-desktop"></i>
+                    Dashboard Walkthrough
+                </h2>
             </div>
-            
-            <div class="preview-tabs">
-                <button class="tab-button active" onclick="showTab('executive')">Executive Overview</button>
-                <button class="tab-button" onclick="showTab('sales')">Sales Performance</button>
-                <button class="tab-button" onclick="showTab('product')">Product Analytics</button>
-                <button class="tab-button" onclick="showTab('regional')">Regional Analysis</button>
-            </div>
-            
-            <div class="tab-content" id="tab-content">
-           <div class="tab-placeholder">
-                    <img src="/assets/img/case-studies/sales/executive-overview-dashboard.png" alt="Executive Overview Dashboard" class="tab-image" />
 
+            <div id="dashboard-container">
+                <div class="preview-tabs">
+                    <button class="tab-button active" onclick="showDashboardTab(event,'executive')">Executive
+                        Overview</button>
+                    <button class="tab-button" onclick="showDashboardTab(event,'sales')">Sales Performance</button>
+                    <button class="tab-button" onclick="showDashboardTab(event,'product')">Product Analytics</button>
+                    <button class="tab-button" onclick="showDashboardTab(event,'regional')">Regional Analysis</button>
+                </div>
+
+                <div class="tab-content" id="tab-content">
+                    <div class="tab-placeholder">
+                        <img src="/assets/img/case-studies/sales/executive-overview-dashboard.png"
+                            alt="Executive Overview Dashboard" class="tab-image" />
+                    </div>
                 </div>
             </div>
         </div>

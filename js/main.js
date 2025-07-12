@@ -277,40 +277,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function showTab(event, tabName, config) {
+    const {
+        tabContentId,
+        contentsMap
+    } = config;
 
+    // Find the nearest parent container of the clicked button
+    const container = event.target.closest('div[id$="-container"]');
+    if (!container) {
+        console.warn("Container not found for event target.");
+        return;
+    }
 
-function showTab(tabName) {
-    // Update active button
-    document.querySelectorAll('.tab-button').forEach(btn => {
+    // Remove 'active' class from all buttons in this container
+    container.querySelectorAll('.tab-button').forEach(btn => {
         btn.classList.remove('active');
     });
+
+    // Add 'active' to the clicked button
     event.target.classList.add('active');
 
-    // Update tab content
-    const tabContent = document.getElementById('tab-content');
-    const contents = {
-        'executive': {
-            path: '/assets/img/case-studies/sales/executive-overview-dashboard.png',
-            title: 'Executive Overview Dashboard'
-        },
-        'sales': {
-            path: '/assets/img/case-studies/sales/sales-analytics-dashboard.png',
-            title: 'Sales Performance Dashboard'
-        },
-        'product': {
-            path: '/assets/img/case-studies/sales/product-analytics-dashboard.png',
-            title: 'Product Analytics Dashboard'
-        },
-        'regional': {
-            path: '/assets/img/case-studies/sales/regional-analysis-dashboard.png',
-            title: 'Regional Analysis Dashboard'
-        }
-    };
-
-    const content = contents[tabName];
-
-    document.querySelector('.tab-image').src = '${content.path}'
-
+    // Load image
+    const tabContent = document.getElementById(tabContentId);
+    const content = contentsMap[tabName];
+    if (!content) {
+        console.warn("No content found for:", tabName);
+        return;
+    }
 
     const newImg = new Image();
     newImg.src = content.path;
@@ -325,4 +319,46 @@ function showTab(tabName) {
         tabContent.appendChild(wrapper);
     };
 }
+const dashboardTabs = {
+    'executive': {
+        path: '/assets/img/case-studies/sales/executive-overview-dashboard.png',
+        title: 'Executive Overview Dashboard'
+    },
+    'sales': {
+        path: '/assets/img/case-studies/sales/sales-analytics-dashboard.png',
+        title: 'Sales Performance Dashboard'
+    },
+    'product': {
+        path: '/assets/img/case-studies/sales/product-analytics-dashboard.png',
+        title: 'Product Analytics Dashboard'
+    },
+    'regional': {
+        path: '/assets/img/case-studies/sales/regional-analysis-dashboard.png',
+        title: 'Regional Analysis Dashboard'
+    }
+};
 
+function showDashboardTab(event, tabName) {
+    showTab(event, tabName, {
+        tabContentId: 'tab-content',
+        contentsMap: dashboardTabs
+    });
+}
+
+const dataModelTabs = {
+    'sales-data-model': {
+        path: '/assets/img/case-studies/sales/sales-data-model.png',
+        title: 'Sales Data Model'
+    },
+    'return-data-model': {
+        path: '/assets/img/case-studies/sales/return-data-model.png',
+        title: 'Return Data Model'
+    }
+};
+
+function showDataModelTab(event, tabName) {
+    showTab(event, tabName, {
+        tabContentId: 'data-model-tab-content',
+        contentsMap: dataModelTabs
+    });
+}
